@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- plugin 上書き用 ---------------*/
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {
+}

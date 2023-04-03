@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+
+/*--------------- breadcrumb（component） ---------------*/
+.breadcrumb {
+  display: none;
+}
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .breadcrumb {
+    display: block;
+    .breadcrumb-list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 24px $container-md-padding;
+      &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        font-size: $rem12;
+        font-weight: $font-weight-medium;
+        &:not(:last-child) {
+          &::after {
+            content: "/";
+            display: inline-block;
+            padding: 0 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+  .breadcrumb {
+    .breadcrumb-list {
+      width: $container-lg-max-width;
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+  }
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {
+}

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- ie alert（object） ---------------*/
+.ie {
+  .page-wrap,
+  .header {
+    padding-top: $vw86;
+  }
+}
+.alert-ie {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  padding: $vw20;
+  background-color: #e4e5e5;
+  font-size: $vw16;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-xl;
+  .alert-ie-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alert-ie-text {
+    padding: 0 0 0 $vw40;
+    line-height: 1.4;
+    background: url("../img/common/ico_alert.png") no-repeat left center / $vw32;
+  }
+}
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .ie {
+    .page-wrap,
+    .header {
+      padding-top: 77px;
+    }
+  }
+  .alert-ie {
+    padding: 20px;
+    font-size: $rem18;
+    .alert-ie-text {
+      padding: 7px 0 4px 56px;
+      background: url("../img/common/ico_alert.png") no-repeat left center / 40px;
+    }
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {}

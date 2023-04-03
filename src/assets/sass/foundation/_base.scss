@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- base ---------------*/
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', 'Cormorant Garamond', 'Yu Gothic Medium', '游ゴシック Medium', 'YuGothic', '游ゴシック体', 'Meiryo', 'メイリオ', 'ＭＳ Ｐゴシック', 'Osaka', 'Arial', 'YakuHanJP', 'Font Awesome 5 Free', sans-serif;
+  font-size: 1.0rem;
+  line-height: 1;
+  color: $text-color;
+  background-color: $white;
+  -webkit-text-size-adjust: 100%;
+  word-break: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
+a {
+  display: block;
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $hover-color;
+  }
+}

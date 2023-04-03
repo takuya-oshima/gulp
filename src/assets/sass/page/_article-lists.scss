@@ -1,0 +1,267 @@
+﻿@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- article-list（page） ---------------*/
+.page-article-list {
+  .article-list-header {
+    position: relative;
+    background-color: $glay-100;
+    .article-list-header-inner {
+      padding: $vw40 $container-padding $vw106;
+    }
+    .article-list-title {
+      margin-bottom: $vw40;
+      &__catch {
+        position: relative;
+        margin-bottom: $vw16;
+        font-family: $font-family-garamond;
+        font-size: $vw44;
+        font-weight: 600;
+        letter-spacing: $letter-spacing-md;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: $vw60;
+          height: 1px;
+          margin: 0 0 $vw6 $vw16;
+          background-color: $glay-400;
+        }
+      }
+      &__detail {
+        font-size: $vw14;
+        font-weight: $font-weight-medium;
+        line-height: 1.7;
+        letter-spacing: $letter-spacing-md;
+      }
+    }
+    .article-list-lead {
+      font-size: $vw14;
+      font-weight: $font-weight-medium;
+      line-height: 1.4;
+      letter-spacing: $letter-spacing-md;
+    }
+    .article-category-list {
+      position: absolute;
+      top: $vw234;
+      right: $vw16;
+      left: $vw16;
+      margin: auto;
+      padding: 0 $vw16;
+      background-color: $white;
+      &__item {
+        border-bottom: 1px solid $glay-300;
+        a {
+          padding: $vw18 0;
+          font-size: $vw14;
+          font-weight: $font-weight-medium;
+          letter-spacing: $letter-spacing-xl;
+        }
+      }
+      &__item--current {
+        border-bottom: 1px solid $primary;
+        a {
+          font-weight: $font-weight-bold;
+          color: $primary;
+        }
+      }
+    }
+  }
+  .article-list-body {
+    padding: $vw190 0 $vw160;
+  }
+  .side-content {
+    .article-side-block {
+      margin-bottom: $vw104;
+      .article-side-block-title {
+        margin-bottom: $vw8;
+        font-size: $vw18;
+      }
+      .article-category-list {
+        &__item {
+          border-bottom: 1px solid $glay-300;
+          a {
+            padding: $vw24 0;
+            font-size: $vw14;
+            font-weight: $font-weight-medium;
+            letter-spacing: $letter-spacing-xl;
+          }
+        }
+        &__item--current {
+          border-bottom: 1px solid $primary;
+          a {
+            font-weight: $font-weight-bold;
+            color: $primary;
+          }
+        }
+      }
+      .article-tag-list {
+        margin-top: $vw32;
+        &__item {
+          margin: $vw18 0;
+          font-size: $vw12;
+          span {
+            margin-right: $vw4;
+          }
+          a {
+            display: inline-block;
+          }
+        }
+      }
+      .article-archives-list {
+        margin-top: $vw32;
+        &__item {
+          margin: $vw40 0;
+          font-size: $vw14;
+          letter-spacing: $letter-spacing-md;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .article-side-block-category,
+    .article-side-block-tag {
+      display: none;
+    }
+  }
+}
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .page-article-list {
+    .breadcrumb {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+    }
+    .article-list-header {
+      .article-list-header-inner {
+        padding: 117px $container-md-padding 104px;
+      }
+      .article-list-title {
+        margin-bottom: 72px;
+        &__catch {
+          margin-bottom: 32px;
+          font-size: $rem88;
+          &::after {
+            width: 124px;
+            margin: 0 0 16px 32px;
+          }
+        }
+        &__detail {
+          margin: 0 0 -20px 0;
+          font-size: $rem18;
+        }
+      }
+      .article-list-lead {
+        font-size: $rem16;
+      }
+      .article-category-list {
+        display: none;
+      }
+    }
+    .article-list-body {
+      padding: 80px 0 160px;
+    }
+    .side-content {
+      .article-side-block {
+        margin-bottom: 104px;
+        .article-side-block-title {
+          margin-bottom: 8px;
+          font-size: $rem18;
+        }
+        .article-category-list {
+          &__item {
+            a {
+              padding: 24px 0;
+              font-size: $rem14;
+            }
+          }
+        }
+        .article-tag-list {
+          margin-top: 32px;
+          &__item {
+            margin: 18px 0;
+            font-size: $rem12;
+            span {
+              margin-right: 4px;
+            }
+            a {
+              border-bottom: 1px solid transparent;
+              &:hover {
+                border-bottom: 1px solid $black;
+              }
+            }
+          }
+        }
+        .article-archives-list {
+          margin-top: 32px;
+          &__item {
+            margin: 40px 0;
+            font-size: $rem14;
+            a {
+              border-bottom: 1px solid transparent;
+              &:hover {
+                border-bottom: 1px solid $black;
+              }
+            }
+          }
+        }
+      }
+      .article-side-block-category,
+      .article-side-block-tag {
+        display: block;
+      }
+    }
+    .block-keyword-area {
+      display: none;
+    }
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+  .page-article-list {
+    .article-list-header {
+      .article-list-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 56px;
+        &__catch {
+          margin-bottom: 0;
+        }
+        &__detail {
+          margin: 0 0 -20px 32px;
+        }
+      }
+    }
+    .article-list-body {
+      padding: 0;
+    }
+    .side-content {
+      .article-side-block-category,
+      .article-side-block-tag {
+        display: block;
+      }
+    }
+  }
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+  .page-article-list {
+    .article-list-header {
+      .article-list-header-inner {
+        width: $container-lg-max-width;
+        margin: 0 auto;
+        padding: 117px 0 104px;
+      }
+    }
+  }
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {
+}

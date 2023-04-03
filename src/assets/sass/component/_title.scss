@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- title（component） ---------------*/
+.heading-xl {
+  font-size: $vw32;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+  letter-spacing: $letter-spacing-md;
+  color: $black;
+}
+.heading-lg {
+  font-size: $vw24;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+  letter-spacing: $letter-spacing-md;
+  color: $black;
+}
+.heading-md {
+  font-size: $vw20;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+  letter-spacing: $letter-spacing-md;
+  color: $black;
+}
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .heading-xl {
+    font-size: $rem40;
+  }
+  .heading-lg {
+    font-size: $rem32;
+  }
+  .heading-md {
+    font-size: $rem24;
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {
+}

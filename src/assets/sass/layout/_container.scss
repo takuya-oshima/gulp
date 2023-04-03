@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- container（layout） ---------------*/
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+}
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .container {
+    padding-right: $container-md-padding;
+    padding-left: $container-md-padding;
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+  .container {
+    max-width: $container-lg-max-width;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {}

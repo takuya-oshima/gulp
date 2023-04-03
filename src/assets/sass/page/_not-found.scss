@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- 404 not found（page） ---------------*/
+.page-not-found {
+  .not-found-header {
+    padding: $vw64 $vw16 $vw80;
+    .not-found-header-title {
+      margin-bottom: $vw40;
+      font-size: $vw40;
+      font-weight: $font-weight-bold;
+      letter-spacing: $letter-spacing-lg;
+      text-align: center;
+    }
+    .not-found-header-sub-title {
+      margin-bottom: $vw64;
+      font-size: $vw18;
+      font-weight: $font-weight-bold;
+      text-align: center;
+    }
+    .not-found-header-text {
+      margin-bottom: $vw64;
+      font-size: $vw16;
+      font-weight: $font-weight-medium;
+      line-height: 1.7;
+      letter-spacing: $letter-spacing-md;
+    }
+  }
+}
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .page-not-found {
+    .not-found-header {
+      padding: 160px $container-md-padding 80px;
+      .not-found-header-title {
+        margin-bottom: 32px;
+        font-size: $rem40;
+      }
+      .not-found-header-sub-title {
+        margin-bottom: 80px;
+        font-size: $rem24;
+      }
+      .not-found-header-text {
+        margin-bottom: 64px;
+        font-size: $rem16;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+  .page-not-found {
+    .not-found-header {
+      width: 734px;
+      margin: 0 auto;
+      padding: 220px 0 80px;
+    }
+  }
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {
+}

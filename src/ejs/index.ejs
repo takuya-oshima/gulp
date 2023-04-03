@@ -1,0 +1,225 @@
+<%
+const meta = {
+  title: 'トップページ',
+  description: 'これはトップページです。',
+  page: 'top',
+  url: 'index.html',
+  path: ''
+};
+%>
+
+<%- include('includes/_head', {meta: meta}) %>
+<div class="page-wrap">
+<%- include('includes/_header') %>
+  <div class="content-wrap page-top">
+    <main class="main-content">
+      <div class="top-main-visual">
+        <div class="top-main-visual-slide" id="js-top-mainvisual">
+          <div class="top-main-visual-slide-item">
+            <img src="assets/img/top/img_top_main_visual_01_sp.jpg" width="735" height="1156" alt="わたしに似合う暮らしをつくる" class="d-md-none">
+            <img src="assets/img/top/img_top_main_visual_01_pc.jpg" width="1880" height="1226" alt="わたしに似合う暮らしをつくる" class="d-sm-none">
+          </div>
+          <div class="top-main-visual-slide-item">
+            <img src="assets/img/top/img_top_main_visual_02_sp.jpg" width="735" height="1156" alt="わたしに似合う暮らしをつくる" class="d-md-none">
+            <img src="assets/img/top/img_top_main_visual_02_pc.jpg" width="1880" height="1227" alt="わたしに似合う暮らしをつくる" class="d-sm-none">
+          </div>
+        </div>
+        <div class="top-main-visual-catch">
+          <h2 class="top-main-visual-catch-title">
+            <p class="top-main-visual-catch-title__detail">わたしに似合う</p>
+            <p class="top-main-visual-catch-title__detail">暮らしをつくる</p>
+          </h2>
+        </div>
+      </div><!-- end top-main-visual -->
+      <section class="top-introduction">
+        <div class="top-introduction-inner">
+          <div class="top-introduction-title container">
+            <div class="top-introduction-title__catch">Introduction</div>
+            <h2 class="top-introduction-title__detail">NAGAREYAMA<br>Style</h2>
+          </div>
+          <div class="top-introduction-detail">
+            <div class="top-introduction-detail-image">
+              <img src="assets/img/top/img_top_introduction_nagareyama_style_sp.jpg" width="572" height="560" alt="NAGAREYAMA Style" class="d-md-none">
+              <img src="assets/img/top/img_top_introduction_nagareyama_style_pc.jpg" width="1012" height="759" alt="NAGAREYAMA Style" class="d-sm-none">
+            </div>
+            <div class="top-introduction-detail-body">
+              <p class="top-introduction-detail-text">自分に合った、自分らしい暮らしを楽しむ。<br>
+                都心から一番近い森のまちに住む人々のStyleは、十人十色。<br>
+                <br>
+                ここにはあなたらしいStyleをみつけるヒントが、<br>
+                隠されているかもしれません。</p>
+              <a href="" class="btn btn-text-primary"><span>ながれやまを知る</span></a>
+            </div>
+          </div>
+          <div class="top-introduction-visual"><img src="assets/img/top/img_top_otakanomori_station.jpg" width="2000" height="918" alt="流山駅おおたかの森駅周辺"></div>
+        </div>
+      </section><!-- end top-introduction -->
+      <section class="top-article-list">
+        <div class="top-article-list-inner container">
+          <div class="top-introduction-title">
+            <div class="top-introduction-title__catch">Magazine</div>
+            <h2 class="top-introduction-title__detail">ながれやまStyleマガジン</h2>
+          </div>
+          <div class="top-article-list-category">
+            <h3 class="top-article-list-category-title">母になるなら流山市。</h3>
+            <p class="top-article-list-category-text">子育てと、やりたいこと。どちらかを選ぶような生き方はしない。<br>
+            新時代のワークライフバランスや、あなたらしい子育てのヒントが見つかるかも。</p>
+            <ul class="article-list article-list-column-second">
+              <li class="article-list-item">
+                <div class="article-list-item-inner">
+                  <a href="" class="article-list-item-link">きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</a>
+                  <div class="article-list-item-image"><img src="assets/img/common/img_article_sample_01.jpg" width="556" height="343" alt="画像タイトルが入ります。"></div>
+                  <div class="article-list-item-body">
+                    <h3 class="article-list-item-title"><span>きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</span></h3>
+                    <div class="article-list-item-meta">
+                      <div class="article-list-item-category">母になるなら流山市。</div>
+                      <div class="article-list-item-public-date">2021.11.23</div>
+                    </div>
+                    <div class="article-list-item-tag-wrap">
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>子育て</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>制度</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>移住・定住</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="article-list-item">
+                <div class="article-list-item-inner">
+                  <a href="" class="article-list-item-link">きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</a>
+                  <div class="article-list-item-image"><img src="assets/img/common/img_article_sample_01.jpg" width="556" height="343" alt="画像タイトルが入ります。"></div>
+                  <div class="article-list-item-body">
+                    <h3 class="article-list-item-title"><span>きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</span></h3>
+                    <div class="article-list-item-meta">
+                      <div class="article-list-item-category">母になるなら流山市。</div>
+                      <div class="article-list-item-public-date">2021.11.23</div>
+                    </div>
+                    <div class="article-list-item-tag-wrap">
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>子育て</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>制度</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>移住・定住</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="btn btn-text-primary"><span>View more</span></a>
+          </div><!-- end top-article-list-category -->
+          <div class="top-article-list-category">
+            <h3 class="top-article-list-category-title">都心から一番近い森のまち</h3>
+            <p class="top-article-list-category-text">都心から最短20分の、森とみどりがある暮らし。<br>
+            豊かな自然に囲まれた快適なまちでの暮らしのヒントが見つかるかも。</p>
+            <ul class="article-list article-list-column-second">
+              <li class="article-list-item">
+                <div class="article-list-item-inner">
+                  <a href="" class="article-list-item-link">きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</a>
+                  <div class="article-list-item-image"><img src="assets/img/common/img_article_sample_01.jpg" width="556" height="343" alt="画像タイトルが入ります。"></div>
+                  <div class="article-list-item-body">
+                    <h3 class="article-list-item-title"><span>きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</span></h3>
+                    <div class="article-list-item-meta">
+                      <div class="article-list-item-category">母になるなら流山市。</div>
+                      <div class="article-list-item-public-date">2021.11.23</div>
+                    </div>
+                    <div class="article-list-item-tag-wrap">
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>子育て</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>制度</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>移住・定住</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="article-list-item">
+                <div class="article-list-item-inner">
+                  <a href="" class="article-list-item-link">きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</a>
+                  <div class="article-list-item-image"><img src="assets/img/common/img_article_sample_01.jpg" width="556" height="343" alt="画像タイトルが入ります。"></div>
+                  <div class="article-list-item-body">
+                    <h3 class="article-list-item-title"><span>きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</span></h3>
+                    <div class="article-list-item-meta">
+                      <div class="article-list-item-category">母になるなら流山市。</div>
+                      <div class="article-list-item-public-date">2021.11.23</div>
+                    </div>
+                    <div class="article-list-item-tag-wrap">
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>子育て</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>制度</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>移住・定住</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="btn btn-text-primary"><span>View more</span></a>
+          </div><!-- end top-article-list-category -->
+          <div class="top-article-list-category">
+            <h3 class="top-article-list-category-title">市民の知恵と力が生きるまち</h3>
+            <p class="top-article-list-category-text">起業する。コミュニティをつくる。次々とうまれるこのまちのこれからの一歩。<br>
+            あなたの挑戦したい目標や、叶えたい夢につながるヒントが見つかるかも。</p>
+            <ul class="article-list article-list-column-second">
+              <li class="article-list-item">
+                <div class="article-list-item-inner">
+                  <a href="" class="article-list-item-link">きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</a>
+                  <div class="article-list-item-image"><img src="assets/img/common/img_article_sample_01.jpg" width="556" height="343" alt="画像タイトルが入ります。"></div>
+                  <div class="article-list-item-body">
+                    <h3 class="article-list-item-title"><span>きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</span></h3>
+                    <div class="article-list-item-meta">
+                      <div class="article-list-item-category">母になるなら流山市。</div>
+                      <div class="article-list-item-public-date">2021.11.23</div>
+                    </div>
+                    <div class="article-list-item-tag-wrap">
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>子育て</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>制度</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>移住・定住</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="article-list-item">
+                <div class="article-list-item-inner">
+                  <a href="" class="article-list-item-link">きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</a>
+                  <div class="article-list-item-image"><img src="assets/img/common/img_article_sample_01.jpg" width="556" height="343" alt="画像タイトルが入ります。"></div>
+                  <div class="article-list-item-body">
+                    <h3 class="article-list-item-title"><span>きっかけはママ友募集。多胎児家庭支援サークルを立ち上げた双子ママが描く子育てスタイル</span></h3>
+                    <div class="article-list-item-meta">
+                      <div class="article-list-item-category">母になるなら流山市。</div>
+                      <div class="article-list-item-public-date">2021.11.23</div>
+                    </div>
+                    <div class="article-list-item-tag-wrap">
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>子育て</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>制度</a></div>
+                      <div class="article-list-item-tag"><a href="https://www.deepl.com/translator"><span>#</span>移住・定住</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="btn btn-text-primary"><span>View more</span></a>
+          </div><!-- end top-article-list-category -->
+        </main><!-- end main-content -->
+      </section><!-- end top-article-list -->
+      <div class="block-keyword-area">
+        <div class="keyword-area">
+          <div class="keyword-area-inner">
+            <h2 class="keyword-area-title"># KEYWORD</h2>
+            <ul class="keyword-list">
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+              <li class="keyword-list__item"><a href=""><span>＃</span>タグテキスト</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- end block-keyword-area -->
+      <div class="block-banner">
+        <div class="container">
+          <div class="banner-community">
+            <a href="">
+              <img src="assets/img/common/banner_community_sp.png" width="343" height="286" alt="Nの研究室" class="d-md-none">
+              <img src="assets/img/common/banner_community_pc.png" width="720" height="180" alt="Nの研究室" class="d-sm-none">
+            </a>
+          </div>
+        </div>
+      </div><!-- end block-banner -->
+    </main><!-- end main-content -->
+  </div><!-- end content-wrap -->
+  <%- include('includes/_footer') %>

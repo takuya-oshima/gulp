@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- content（layout） ---------------*/
+
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    .main-content {
+      width: 67.88%;
+      padding-right: 5.55%;
+      border-right: 1px solid $glay-300;
+    }
+    .side-content {
+      width: 20.5%;
+      margin-left: 5.55%;
+    }
+  }
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+  .content {
+    .main-content {
+      width: 782px;
+      padding-right: 64px;
+    }
+    .side-content {
+      width: 240px;
+      margin-left: 64px;
+    }
+  }
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {}

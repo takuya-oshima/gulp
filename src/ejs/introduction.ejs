@@ -1,0 +1,228 @@
+<%
+const meta = {
+  title: '紹介ページ',
+  description: 'これは紹介ページです。',
+  page: 'introduction',
+  url: 'introduction.html',
+  path: ''
+};
+%>
+
+<%- include('includes/_head', {meta: meta}) %>
+<div class="page-wrap">
+<%- include('includes/_header') %>
+  <div class="content-wrap page-introduction">
+    <main class="main-content">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item"><a href="">TOP</a></li>
+          <li class="breadcrumb-list__item breadcrumb-list__item--current">ながれやまを知る</li>
+        </ul>
+      </div><!-- end breadcrumb -->
+      <div class="introduction-header">
+        <div class="introduction-header-inner">
+          <div class="introduction-header-image">
+            <img src="img/introduction/img_introduction_main_visual_sp.jpg" width="735" height="450" alt="ながれやまを知る" class="d-md-none">
+            <img src="img/introduction/img_introduction_main_visual_pc.jpg" width="1880" height="636" alt="ながれやまを知る" class="d-sm-none">
+          </div>
+          <div class="introduction-header-catch">
+            <h2 class="introduction-header-catch-title"><span>ながれやまを知る</span></h2>
+          </div>
+        </div>
+      </div><!-- end introduction-header -->
+      <div class="introduction-place">
+        <div class="introduction-place-inner container">
+          <p class="introduction-place-text">流山市は、<br class="d-sm-none">
+          千葉県北西部に位置し、都心から25km圏内。<br class="d-sm-none">
+          電車では、つくばエクスプレスで都心へ最短20分。<br class="d-sm-none">
+          羽田・成田空港、東京駅への直行バス、<br class="d-sm-none">
+          常磐自動車道につながる流山インターチェンジもあり、<br class="d-sm-none">
+          アクセス良好な立地です。<br>
+          <br>
+          この、都心から一番近い森のまちには、<br class="d-sm-none">
+          オオタカが生息する市野谷の森や、<br class="d-sm-none">
+          江戸川、利根運河など、豊かな自然にも恵まれ、<br class="d-sm-none">
+          30代～40代の人口が最も多いことから、<br class="d-sm-none">
+          まちには子どもたちが増え、<br class="d-sm-none">
+          新しいコミュニティも次々とうまれています。</p>
+          <div class="introduction-place-map">
+            <img src="img/introduction/img_introduction_map_sp.png" width="735" height="1043" alt="流山市マップ" class="d-md-none">
+            <img src="img/introduction/img_introduction_map_pc.png" width="558" height="748" alt="流山市マップ" class="d-sm-none">
+          </div>
+        </div>
+      </div><!-- end introduction-place -->
+      <section class="introduction-point">
+        <div class="introduction-point-inner container">
+          <h2 class="introduction-point-title heading-lg">流山市の魅力</h2>
+          <ul class="introduction-point-list">
+            <li class="introduction-point-list-item">
+              <div class="introduction-point-list-item-inner">
+                <div class="introduction-point-list-item-image"><img src="img/introduction/img_introduction_point_01.jpg" width="352" height="220" alt="駅前送迎保育ステーション"></div>
+                <div class="introduction-point-list-item-body">
+                  <h3 class="introduction-point-list-item-title">駅前送迎保育ステーション</h3>
+                  <p class="introduction-point-list-item-text">駅前から指定保育園へとバスで送迎を行う市内2か所の駅前送迎保育ステーションや、保育園の新・増設をはじめ、働きながらより良い子育てができる環境づくりを進めています。</p>
+                </div>
+              </div>
+              <a href="" class="btn btn-text-primary"><span>View more</span></a>
+            </li>
+            <li class="introduction-point-list-item">
+              <div class="introduction-point-list-item-inner">
+                <div class="introduction-point-list-item-image"><img src="img/introduction/img_introduction_point_02.jpg" width="352" height="220" alt="流山グリーンチェーン戦略"></div>
+                <div class="introduction-point-list-item-body">
+                  <h3 class="introduction-point-list-item-title">流山グリーンチェーン戦略</h3>
+                  <p class="introduction-point-list-item-text">流山市の認定制度により植栽された街中の緑と森をつなげることで、緑のうるおいに溢れた快適な生活環境を目指しています。</p>
+                </div>
+              </div>
+              <a href="" class="btn btn-text-primary"><span>View more</span></a>
+            </li>
+            <li class="introduction-point-list-item">
+              <div class="introduction-point-list-item-inner">
+                <div class="introduction-point-list-item-image"><img src="img/introduction/img_introduction_point_03.jpg" width="352" height="220" alt="女性向け創業スクール"></div>
+                <div class="introduction-point-list-item-body">
+                  <h3 class="introduction-point-list-item-title">女性向け創業スクール</h3>
+                  <p class="introduction-point-list-item-text">起業・創業に関心のある女性を対象に、毎年開催する創業スクールでは、実践的な内容が学べるほか、受講生同士の強いつながりもうまれています。</p>
+                </div>
+              </div>
+              <a href="" class="btn btn-text-primary"><span>View more</span></a>
+            </li>
+          </ul>
+        </div>
+      </section><!-- end introduction-point -->
+      <section class="introduction-numbers">
+        <div class="introduction-numbers-inner container">
+          <h2 class="introduction-numbers-title heading-lg">数字で見る流山市</h2>
+          <div class="introduction-numbers-box">
+            <h3 class="introduction-numbers-sub-title">市民の声<span>ながれやままちづくり達成度アンケート（2020年）</span></h3>
+            <ul class="introduction-numbers-list">
+              <li class="introduction-numbers-list-item">
+                <h4 class="introduction-numbers-list-item-title">住み心地が良いと感じる</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_house.svg" width="88" height="88" alt="住み心地が良いと感じる" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-number">87.6</p>
+                    <p class="introduction-numbers-list-item-detail-unit">%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="introduction-numbers-list-item">
+                <h4 class="introduction-numbers-list-item-title">この街に住み続けたい</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_family.svg" width="88" height="88" alt="この街に住み続けたい" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-number">92.2</p>
+                    <p class="introduction-numbers-list-item-detail-unit">%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="introduction-numbers-list-item">
+                <h4 class="introduction-numbers-list-item-title">街の自然に満足している</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_nature.svg" width="88" height="88" alt="街の自然に満足している" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-number">83.0</p>
+                    <p class="introduction-numbers-list-item-detail-unit">%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="introduction-numbers-list-item">
+                <h4 class="introduction-numbers-list-item-title">市民の声が市政に反映されている</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_voice.svg" width="88" height="88" alt="市民の声が市政に反映されている" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-number">83.0</p>
+                    <p class="introduction-numbers-list-item-detail-unit">%</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="introduction-numbers-box">
+            <h3 class="introduction-numbers-sub-title">流山市の人口</h3>
+            <div class="introduction-numbers-list-item introduction-numbers-list-item--population">
+              <div class="introduction-numbers-list-item-body">
+                <div class="introduction-numbers-list-item-detail">
+                  <p class="introduction-numbers-list-item-detail-number">15</p>
+                  <p class="introduction-numbers-list-item-detail-unit">万人</p>
+                  <p class="introduction-numbers-list-item-detail-supplement">( 2005年 )</p>
+                </div>
+                <div class="introduction-numbers-list-item-title">
+                  <img src="img/introduction/ico_introduction_arrow_sp.svg" width="12" height="35" alt="矢印" class="introduction-numbers-list-item-title-arrow d-md-none">
+                  <div class="introduction-numbers-list-item-title-emphasis">約<span>5</span>万人<br>増加</div>
+                  <img src="img/introduction/ico_introduction_arrow_pc.svg" width="107" height="15" alt="矢印" class="introduction-numbers-list-item-title-arrow d-sm-none">
+                </div>
+                <div class="introduction-numbers-list-item-detail">
+                  <p class="introduction-numbers-list-item-detail-number">20</p>
+                  <p class="introduction-numbers-list-item-detail-unit">万人</p>
+                  <p class="introduction-numbers-list-item-detail-supplement">( 2021年 )</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="introduction-numbers-box">
+            <h3 class="introduction-numbers-sub-title">流山市の1位</h3>
+            <ul class="introduction-numbers-list">
+              <li class="introduction-numbers-list-item introduction-numbers-list-item--first-place">
+                <h4 class="introduction-numbers-list-item-title">年少人口増加数（15歳未満）</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_child.svg" width="88" height="88" alt="年少人口増加数（15歳未満）" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-text">全国</p>
+                    <p class="introduction-numbers-list-item-detail-number">1</p>
+                    <p class="introduction-numbers-list-item-detail-unit">%</p>
+                  </div>
+                </div>
+                <p class="introduction-numbers-list-item-supplement">総務省「住民基本台帳に基づく人口、人口動態及び世帯数」<br>2018・2019</p>
+              </li>
+              <li class="introduction-numbers-list-item introduction-numbers-list-item--first-place">
+                <h4 class="introduction-numbers-list-item-title">人口増減率</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_human.svg" width="88" height="88" alt="人口増減率" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-text">全国の<br>市で</p>
+                    <p class="introduction-numbers-list-item-detail-number">1</p>
+                    <p class="introduction-numbers-list-item-detail-unit">%</p>
+                  </div>
+                </div>
+                <p class="introduction-numbers-list-item-supplement">新・公民連携最前線 / 日経BP総合研究所<br>2015年-2020年</p>
+              </li>
+              <li class="introduction-numbers-list-item introduction-numbers-list-item--first-place">
+                <h4 class="introduction-numbers-list-item-title">合計特殊出生率</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_baby.svg" width="88" height="88" alt="合計特殊出生率" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-text">県内</p>
+                    <p class="introduction-numbers-list-item-detail-number">1</p>
+                    <p class="introduction-numbers-list-item-detail-unit">位</p>
+                  </div>
+                </div>
+                <p class="introduction-numbers-list-item-supplement">総務省「住民基本台帳に基づく人口、人口動態及び世帯数<br>2018・2019</p>
+              </li>
+              <li class="introduction-numbers-list-item introduction-numbers-list-item--first-place">
+                <h4 class="introduction-numbers-list-item-title">転入超過数</h4>
+                <div class="introduction-numbers-list-item-body">
+                  <img src="img/introduction/img_introduction_moving.svg" width="88" height="88" alt="転入超過数" class="introduction-numbers-list-item-image">
+                  <div class="introduction-numbers-list-item-detail">
+                    <p class="introduction-numbers-list-item-detail-text"><span>政令市<br class="d-md-none">を除き</span>全国</p>
+                    <p class="introduction-numbers-list-item-detail-number">1</p>
+                    <p class="introduction-numbers-list-item-detail-unit">位</p>
+                  </div>
+                </div>
+                <p class="introduction-numbers-list-item-supplement">総務省「住民基本台帳人口移動報告」<br>2016〜2020</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section><!-- end introduction-numbers -->
+      <div class="block-banner">
+        <div class="container">
+          <div class="banner-community">
+            <a href="">
+              <img src="img/common/banner_community_sp.png" width="343" height="286" alt="Nの研究室" class="d-md-none">
+              <img src="img/common/banner_community_pc.png" width="720" height="180" alt="Nの研究室" class="d-sm-none">
+            </a>
+          </div>
+        </div>
+      </div><!-- end block-banner -->
+    </main><!-- end main-content -->
+  </div><!-- end content-wrap -->
+  <%- include('includes/_footer') %>

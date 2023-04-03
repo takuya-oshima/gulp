@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "variables" as *;
+
+
+// ---------- MediaQuery ----------
+//768px以下（SPのみ）
+@mixin media-breakpoint-xs-only {
+  @media screen and (max-width:($md)) {
+    @content;
+  }
+}
+//768px〜（TAB）
+@mixin media-breakpoint-md {
+  @media screen and (min-width:($md)) {
+    @content;
+  }
+}
+//992px〜（PC）
+@mixin media-breakpoint-lg {
+  @media screen and (min-width:($lg)) {
+    @content;
+  }
+}
+//1200px〜（PC Oversize）
+@mixin media-breakpoint-xl {
+  @media screen and (min-width:($xl)) {
+    @content;
+  }
+}
+
+
+// ---------- full-width ----------
+@mixin full-width  {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+// ---------- flexbox ----------
+@mixin flex-start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-start-end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@mixin flex-center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-center-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@mixin flex-end-start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+@mixin flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin flex-end-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@mixin flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+// ---------- form parts ----------
+@mixin placeholder-color {
+  &:placeholder-shown {
+    color: #d9dcdb;
+  }
+  &::-webkit-input-placeholder {
+    color: #d9dcdb;
+  }
+  &:-moz-placeholder {
+    color: #d9dcdb;
+  }
+  &::-moz-placeholder {
+    color: #d9dcdb;
+  }
+  &:-ms-input-placeholder {
+    color: #d9dcdb;
+  }
+}

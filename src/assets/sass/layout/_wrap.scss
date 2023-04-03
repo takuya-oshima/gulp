@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- wrap（layout） ---------------*/
+.page-wrap {
+  position: relative;
+}
+.content-wrap {
+  position: relative;
+  padding-top: $vw60;
+}
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .content-wrap {
+    padding-top: 60px;
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {}

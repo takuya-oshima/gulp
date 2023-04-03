@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+//---------- import ----------
+@use "../global" as *;
+
+/*--------------- JS ---------------*/
+html.fiexd,
+body.fiexd {
+  overflow: hidden;
+}
+
+
+//768px〜（TAB）
+@include media-breakpoint-md {
+  .slide-dots {
+    button {
+      width: 8px;
+      height: 8px;
+      margin: 16px 0;
+      background-color: #ddd;
+      border-radius: $rounded-pill;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .slick-active {
+      button {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+//992px〜（PC）
+@include media-breakpoint-lg {
+}
+
+//1200px〜（PC Oversize）
+@include media-breakpoint-xl {
+}
+
+// ---------- IE11ハック ----------
+@media all and (-ms-high-contrast: none) {
+}
+
