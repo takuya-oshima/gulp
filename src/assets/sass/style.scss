@@ -11,29 +11,15 @@
 
 //レイアウト（ページ全体の大枠レイアウト用のスタイル）
 @use "layout/wrap";
-@use "layout/content";
-@use "layout/container";
 
 //コンポーネント（再利用可能で最小パーツ用のスタイル）
-@use "component/title";
-@use "component/button";
-@use "component/breadcrumb";
-@use "component/pager";
+//@use "component/xxx";
 
 //オブジェクト（再利用可能でページ内のブロック（パーツの集合体）またはcomponentが結合したスタイル）
-@use "object/header";
-@use "object/keyword";
-@use "object/article-list";
-@use "object/banner";
-@use "object/footer";
-@use "object/ie";
+//@use "object/xxx";
 
 //ページ（component/blockに該当しないページ独自のスタイル）
-@use "page/top";
-@use "page/article-detail";
-@use "page/article-lists";
-@use "page/introduction";
-@use "page/community";
+//@use "page/xxx";
 
 //ユーティリティ（汎用・状態変化・JS・プラグイン用のスタイル）
 @use "utility/margin";
