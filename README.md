@@ -3,8 +3,6 @@
 Web制作の案件で使うために構築した、gulpの開発環境です。
 HTML・CSS・JavaScript・画像の処理をまとめて自動化しています。
 
-※現在の開発では、主にViteやNext.jsを使用しています。
-
 ## 使用技術
 
 gulp / Sass / EJS / PostCSS（Autoprefixer）/ Browsersync
